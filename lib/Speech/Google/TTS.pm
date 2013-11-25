@@ -59,9 +59,11 @@ Create a new Speech::Google::TTS object and initialize configuration.
 Generates a WAV or MP3 from text, stored in the temp directory.
 
 =head2 as_filename
+
 Gives back the filename of the last generated WAV or MP3 from i.e. "say_text".
 
 =head2 languages
+
 The list of currently supported languages.
 
 =cut
@@ -283,15 +285,9 @@ Please report any bugs or feature requests to C<bug-speech-google-tts at rt.cpan
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Speech::Google::TTS>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
-Feel free to visit the project website
+Feel free to visit the project website http://www.syndicat.com/open_source/google/perl/googletts/
 
-        http://www.syndicat.com/open_source/google/perl/googletts/
-
-or write to
-
-        googletts@syndicat.com
-
-good luck!
+or write to googletts@syndicat.com
 
 
 =head1 SUPPORT
@@ -301,9 +297,7 @@ You can find documentation for this module with the perldoc command.
     perldoc Speech::Google::TTS
 
 
-Feel free to visit the project website 
-
-        http://www.syndicat.com/open_source/google/perl/googletts/
+Feel free to visit the project website http://www.syndicat.com/open_source/google/perl/googletts/
 
 You can also look for information at:
 
