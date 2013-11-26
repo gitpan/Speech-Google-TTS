@@ -8,9 +8,13 @@ my $builder = Module::Build->new(
     dist_author         => 'Niels Dettenbach <nd@syndicat.com>',
     dist_version_from   => 'lib/Speech/Google/TTS.pm',
     build_requires => {
-        'Test::More' => 0,
+        'Test::More' 		=> 0,
+	'File::Temp'		=> 0,
+	'LWP::UserAgent' 	=> 0,
+	'LWP::ConnCache'	=> 0,
+	'CGI::Util'		=> 0,
     },
-    add_to_cleanup      => [ 'Speech::Google::TTS-*' ],
+    add_to_cleanup     => [ 'Speech::Google::TTS-*' ],
     create_makefile_pl => 'traditional',
 );
 

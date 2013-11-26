@@ -16,11 +16,11 @@ Speech::Google::TTS - Module that uses Google Translate for text to speech synth
 
 =head1 VERSION
 
-Version 0.71
+Version 0.73
 
 =cut
 
-our $VERSION = '0.71';
+our $VERSION = '0.73';
 
 
 =head1 SYNOPSIS
