@@ -1,5 +1,8 @@
 Revision history for Speech::Google::TTS
 
+0.74	28/12/2013
+	System independent default tempdir.
+
 0.73	26/12/2013
 	Some minor fixes for *BSD compatibility
 

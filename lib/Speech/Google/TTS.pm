@@ -16,11 +16,11 @@ Speech::Google::TTS - Module that uses Google Translate for text to speech synth
 
 =head1 VERSION
 
-Version 0.73
+Version 0.74
 
 =cut
 
-our $VERSION = '0.73';
+our $VERSION = '0.74';
 
 
 =head1 SYNOPSIS
@@ -72,7 +72,7 @@ The list of currently supported languages.
 
 use warnings;
 use strict;
-use File::Temp qw(tempfile);
+use File::Temp qw(tempfile tempdir);
 use CGI::Util qw(escape);
 use LWP::UserAgent;
 use LWP::ConnCache;
@@ -88,7 +88,7 @@ sub new {
         $self->{'samplerate'}           = 16000;
         $self->{'speed'}                = 1.2;
         $self->{'lang'}                 = "en";
-        $self->{'tmpdir'}        	= "/var/tmp";
+        $self->{'tmpdir'}        	= tempdir( CLEANUP =>  0 );
         $self->{'timeout'}    		= "10";
         $self->{'googleurl'} 		= "http://translate.google.com/translate_tts";
         $self->{'languages'}		= languages();

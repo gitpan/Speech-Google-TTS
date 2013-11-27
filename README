@@ -15,7 +15,8 @@ PREREQUISITES
 
 You need mpg123 or mpg321 for audio format conversion to WAV.
 
-You need sox for further audio conversion.
+You need sox for further audio conversion only (if sox is used as 
+audio type).
 
 
 INSTALLATION
